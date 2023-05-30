@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material';
+import {createTheme} from '@mui/material';
 
 export const theme = createTheme({
     components: {
@@ -7,7 +7,7 @@ export const theme = createTheme({
           root: ({ ownerState }) => ({
             ...(ownerState.variant === 'contained' &&
               ownerState.color === 'primary' && {
-                backgroundColor: '#202020',
+                backgroundColor: '#E76161',
                 color: '#fff',
               }),
           }),
@@ -15,4 +15,3 @@ export const theme = createTheme({
       },
     },
   });
-  
