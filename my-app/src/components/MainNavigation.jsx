@@ -64,7 +64,7 @@ const AppRoutes = () => {
         path={RoutePaths.Book}
         element={authContext.user.id ? <Book /> : Redirect}
       />
-      {/* <Route
+      <Route
         exact
         path={RoutePaths.EditBook}
         element={authContext.user.id ? <EditBook /> : Redirect}
@@ -73,18 +73,17 @@ const AppRoutes = () => {
         exact
         path={RoutePaths.AddBook}
         element={authContext.user.id ? <EditBook /> : Redirect}
-      /> */}
-
-      {/* <Route
+      />
+      <Route
         exact
         path={RoutePaths.Cart}
         element={authContext.user.id ? <Cart /> : Redirect}
-      /> */}
-      {/* <Route
+      />
+      <Route
         exact
         path={RoutePaths.UpdateProfile}
         element={authContext.user.id ? <UpdateProfile /> : Redirect}
-      /> */}
+      />
     </Routes>
   );
 };
